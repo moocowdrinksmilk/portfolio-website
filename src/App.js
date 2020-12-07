@@ -1,24 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import {Container, Row, Col} from 'react-bootstrap'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Container className = "fill">
+        <Row className="justify-content-center row-center">
+          <Col md={8} className="text-center title">
+            Hey, I am <span className="name">Rui Xian</span>
+            <br></br>
+            I am a Software Engineer
+          </Col>
+        </Row>
+      </Container>
   );
 }
 

@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.fill {
+  height: 100vh;
+}
+
+.front{
+  width: 10px;
+  font-size: 100px;
+}
+
+.row-center{
+  margin-top: 18rem;
+}
+
+.title{
+  font-size: 3rem;
+}
+
+.name{
+  color: teal;
+  font-family: 'Poppins', sans-serif;
+}
