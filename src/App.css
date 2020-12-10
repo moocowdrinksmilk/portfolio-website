@@ -39,6 +39,9 @@
 
 .fill {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: thistle;
 }
 
 .front{
@@ -57,4 +60,8 @@
 .name{
   color: teal;
   font-family: 'Poppins', sans-serif;
+}
+
+.fade-out{
+  opacity: 1;
 }
