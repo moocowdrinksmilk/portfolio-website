@@ -1,4 +1,21 @@
 .personal{
     padding: 2rem;
-    display: inline-block;
+}
+
+.description{
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    text-align: left;
+}
+
+.me{
+    height: 20rem;
+    align-items: flex-end;
+    display: flex;
 }

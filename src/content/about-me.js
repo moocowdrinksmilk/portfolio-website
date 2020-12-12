@@ -1,32 +1,40 @@
-import React, {Component} from "react"
-import {Container, Row, Col} from 'react-bootstrap'
+import React, { Component } from "react"
+import { Container, Row, Col } from 'react-bootstrap'
 import '../App.css';
 import './about-me.css'
 
-class AboutMe extends Component{
-    render(){
-        return(
-            <Container fluid className="justify-content-center">
-                
-                <h1 className='personal'>
-                    About Me!
-                </h1>
-                {/* <Row className="personal">
-                    <Col md={{span:3, offset:0}}>
-                        <img src='../../face.png' width='250rem'/>
-                    </Col>
-                    <Col md={{span:4, offset:2}} className="personal" pt-5>
-                    Hello, I am a dude who has a dick, surprising? I think not
+class AboutMe extends Component {
+    render() {
+        return (
+            <Container className="justify-content-center description">
+                <Container className="justify-content-center" fluid>
+                    <h3 className='personal' data-aos="fade-up">
+                        So, Who is Rui Xian?
+                    </h3>
+                </Container>
+                <Row className=" justify-content-around">
+                    <Col md={{ span: 3 }}>
+                        <img src='../../face.png' width='250rem' />
                     </Col>
                 </Row>
-                <Row>
-                    <Col>
-                    Heloo
+                <Row className="personal justify-content-around">
+
+                    <Col md={{ span: 7 }} className="personal" pt-5>
+                        <li>
+                            <ul>
+                                I am a Computer Science undergraduate studying in the Singapore Management University (SMU)
+                                </ul>
+
+                            <ul>
+                                I am enthusiastic about tech and software engineering. I never cease to discover and try new
+                                technologies and framework, and work on interesting projects in my own free time.
+                                </ul>
+                        </li>
                     </Col>
-                    <Col>
-                    Hello
-                    </Col>
-                </Row> */}
+                </Row>
+                <Container className="fill">
+
+                </Container>
             </Container>
         )
     }
