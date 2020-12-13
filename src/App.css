@@ -41,7 +41,8 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: thistle;
+  /* background-color: black; */
+  color:rgb(175, 175, 175);
 }
 
 .front{

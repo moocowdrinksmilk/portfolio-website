@@ -4,13 +4,13 @@
   top: 0;
 }
 
-li{
+nav li{
     float: left;
     color: thistle;
     margin: 0;
 }
 
-ul{
+nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
