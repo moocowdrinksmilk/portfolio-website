@@ -35,72 +35,9 @@ class AboutMe extends Component {
                         <p>
                             I am someone loves to discover new things, be it different technologies or places!
                         </p>
-                        <p>
-                            {this.state.description}
-                        </p>
+                        
                     </Col>
                 </Row>
-                    <Row>
-                        <Col className="px-0">
-                            <video width="480" height="240" autoplay loop muted
-                                onMouseOver={event =>{
-                                    event.target.play()
-                                    this.changeDescription("The view on the summit of Mount Batur")
-                                }}
-                                onMouseOut={event =>{
-                                    event.target.pause()
-                                    this.changeDescription("These are some places that I have been to recently")
-                                }}
-                                className="vid">
-                                <source src="../../batur.mp4" type="video/mp4" />
-                            </video>
-                        </Col>
-                        <Col className="px-0 mx-0">
-                            <video width="450" height="240" autoplay loop muted
-                                onMouseOver={event =>{
-                                    event.target.play()
-                                    this.changeDescription("Boat ride")
-                                }}
-                                onMouseOut={event =>{
-                                    event.target.pause()
-                                    this.changeDescription("These are some places that I have been to recently")
-                                }}
-                                className="vid">
-                                <source src="../../boat.mp4" type="video/mp4" />
-                            </video>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col className="px-0">
-                            <video width="465" height="240" autoplay loop muted
-                                onMouseOver={event =>{
-                                    event.target.play()
-                                    this.changeDescription("Kayaking in Krabi")
-                                }}
-                                
-                                onMouseOut={event =>{
-                                    event.target.pause()
-                                    this.changeDescription("These are some places that I have been to recently")
-                                }}
-                                className="vid">
-                                <source src="../../kayak.mp4" type="video/mp4" />
-                            </video>
-                        </Col>
-                        <Col className="px-0">
-                            <video width="465" height="240" autoplay loop muted
-                                onMouseOver={event =>{
-                                    event.target.play()
-                                    this.changeDescription("Random seaweed on Gegar Beach")
-                                }}
-                                onMouseOut={event =>{
-                                    event.target.pause()
-                                    this.changeDescription("These are some places that I have been to recently")
-                                }}
-                                className="vid">
-                                <source src="../../seaweed.mp4" type="video/mp4" />
-                            </video>
-                        </Col>
-                    </Row>
                 <Container className="fill">
 
                 </Container>
