@@ -5,13 +5,7 @@ import './nav-bar.css'
 class NavBar extends Component {
     render() {
         return (
-            <Navbar fixed="top">
-                <ul>
-                    <li>
-                        Hello
-                    </li>
-                </ul>
-            </Navbar>
+            <div></div>
         )
     }
 }

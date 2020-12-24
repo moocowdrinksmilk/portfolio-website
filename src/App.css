@@ -42,7 +42,7 @@
   display: flex;
   align-items: center;
   /* background-color: black; */
-  color:rgb(175, 175, 175);
+  color:rgb(255, 255, 255);
 }
 
 .front{
@@ -59,10 +59,14 @@
 }
 
 .name{
-  color: teal;
+  color: rgb(51, 199, 199);
   font-family: 'Poppins', sans-serif;
 }
 
 .fade-out{
   opacity: 1;
 }
+
+
+
+
