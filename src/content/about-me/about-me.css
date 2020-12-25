@@ -1,13 +1,12 @@
 .personal {
   padding: 1rem;
-  color: teal;
 }
 
 .description {
   text-align: center;
 }
 
-li {
+ul li {
   list-style-type: square;
 }
 
@@ -41,7 +40,7 @@ p {
 .tech {
 }
 
-ul {
+.tech-description {
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;

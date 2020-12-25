@@ -22,7 +22,7 @@ class AboutMe extends Component {
                 <Container data-aos="fade-up" data-aos-duration="1000" className="justify-content-center description px-md-5">
 
                     <h2 className='personal'>
-                        1. <span> About Me</span>
+                        <span>1. </span> About Me
                     </h2>
 
                     <Row className="description">
@@ -43,7 +43,7 @@ class AboutMe extends Component {
                             These are some of the technologies I have been working on recently:
                         </p>
 
-                        <ul>
+                        <ul className="tech-description">
                             <li>
                                 React
                             </li>

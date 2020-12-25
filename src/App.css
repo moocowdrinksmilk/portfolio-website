@@ -67,6 +67,14 @@
   opacity: 1;
 }
 
+h2 span{
+  color:  rgb(51, 199, 199);
+}
 
+section{
+  margin-bottom: 10rem;
+}
 
-
+a:hover{
+  text-decoration: none;
+}

@@ -1,0 +1,51 @@
+ol li {
+  font-size: medium;
+  padding-bottom: 0.7rem;
+  padding-top: 0.7rem;
+  padding-left: 0.5rem;
+  text-align: left;
+}
+
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+h5 {
+  text-align: left;
+}
+
+.job-description {
+  text-align: left;
+  list-style-position: outside;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.job-description li {
+  list-style-type: disc;
+  font-weight: 230;
+  padding-bottom: 0.5rem;
+}
+
+h5 a {
+  color: rgb(51, 199, 199);
+  text-decoration: none;
+}
+
+.company-name:hover {
+  background-color: #476980;
+}
+
+
+.active {
+  border-bottom: 2px solid #b9e3ff;
+  display: inline-block;
+  line-height: 0.85;
+}
+
+li span{
+    padding: 0.1rem;
+}
