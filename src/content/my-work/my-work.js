@@ -6,20 +6,39 @@ import './my-work.css'
 class MyWork extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            role: "Software Engineering Intern",
-            company: "Nalagenetics",
-            link: "https://www.nalagenetics.com/",
-            length: "Feb 2020 - July 2020",
-            description: [
-                "Created a medication management feature on the patient portal using Angular",
-                "Wrote UI testcases for the frontend web portals using Cypress",
-                "Write Unit and Integration testcases for the backend Nodejs server using Jest",
-                "Collaboration with the Business Development team to scrape target physician's information on the web using Selenium"]
-        }
-        this.items = this.state.description.map((item) =>
-            <li><span>{item}</span></li>
-        )
+        this.jobs = [
+            {
+                role: "Software Engineering Intern",
+                company: "Nalagenetics",
+                link: "https://www.nalagenetics.com/",
+                length: "Feb 2020 - July 2020",
+                description: [
+                    "Created a medication management feature on the patient portal using Angular",
+                    "Wrote UI testcases for the frontend web portals using Cypress",
+                    "Write Unit and Integration testcases for the backend Nodejs server using Jest",
+                    "Collaboration with the Business Development team to scrape target physician's information on the web using Selenium"]
+            },
+            {
+                role: "Frontend Engineer",
+                company: "SMUMods",
+                link: "https://smumods.com/",
+                length: "Dec 2020 - Present",
+                description: ["Have not started work"]
+            }
+        ]
+        this.state = this.jobs[0]
+        this.curr_index = 0;
+        this.changeActive = this.changeActive.bind(this)
+    }
+
+    componentDidUpdate() {
+    }
+    changeActive = (index) => {
+        let item = document.getElementsByClassName('company-name')
+        item[this.curr_index].classList.remove("active")
+        item[index].classList.add("active")
+        this.curr_index = index
+        this.setState(this.jobs[index])
     }
 
     render() {
@@ -31,24 +50,28 @@ class MyWork extends Component {
                     </h2>
                     <Row className="justify-content-center description">
                         <Col md={{ span: 2 }}>
-                            <ol className="list-group flex-row flex-md-column">
-                                <li className="company-name">
-                                    <span className="active">Nalagenetics</span>
+                            <ol className="list-group flex-row flex-md-column company-parent">
+                                <li className="company-li" onClick={() => { this.changeActive(0) }}>
+                                    <span className="active company-name">Nalagenetics</span>
                                 </li>
-                                <li className="company-name">
-                                    <span>SMUMods</span>
+                                <li className="company-li" onClick={() => { this.changeActive(1) }}>
+                                    <span className="company-name">SMUMods</span>
                                 </li>
                             </ol>
                         </Col>
                         <Col md={{ span: 8 }}>
                             <h5>
-                                Software Engineering Intern @ <a href={this.state.link} >{this.state.company}</a>
+                                {this.state.role} @ <a href={this.state.link} >{this.state.company}</a>
                             </h5>
                             <p>
                                 {this.state.length}
                             </p>
                             <ul className="job-description">
-                                {this.items}
+                                {
+                                    this.state.description.map((thing) =>
+                                    <li><span>{thing}</span></li>
+                                )
+                                }
                             </ul>
                         </Col>
                     </Row>
