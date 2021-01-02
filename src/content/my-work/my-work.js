@@ -48,7 +48,7 @@ class MyWork extends Component {
                     <h2>
                         <span>2. </span>My Experiences
                     </h2>
-                    <Row className="justify-content-center description">
+                    <Row className="justify-content-center description experience">
                         <Col md={{ span: 2 }}>
                             <ol className="list-group flex-row flex-md-column company-parent">
                                 <li className="company-li" onClick={() => { this.changeActive(0) }}>

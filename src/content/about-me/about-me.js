@@ -59,7 +59,7 @@ class AboutMe extends Component {
                         </ul>
                         </Col>
                         <Col md={{ span: 3 }}>
-                            <img src='../../face.png' width='250rem' />
+                            <img src='face.png' width='250rem' />
                         </Col>
                     </Row>
                     

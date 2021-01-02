@@ -50,3 +50,7 @@ h5 a {
 li span{
     padding: 0.1rem;
 }
+
+.experience{
+    min-height: 25rem;
+}
