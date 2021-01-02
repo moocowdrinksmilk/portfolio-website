@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react"
 import { Container, Row, Col, Navbar } from 'react-bootstrap'
-import '../../App.css';
+import '../../App.css'
 import './my-work.css'
 
 class MyWork extends Component {
