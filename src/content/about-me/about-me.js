@@ -28,7 +28,7 @@ class AboutMe extends Component {
                     <Row className="description">
                         <Col md={{ span: 8 }}>
                         <p>
-                            As you can tell, my name is Rui Xian, and I am a Software Engineer based in Singapore.
+                            I am a Software Engineer based in Singapore.
                         </p>
                         <p>
                             I am currently pursuing a bachelor's of

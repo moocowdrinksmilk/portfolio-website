@@ -19,11 +19,14 @@ class MyWork extends Component {
                     "Collaboration with the Business Development team to scrape target physician's information on the web using Selenium"]
             },
             {
-                role: "Frontend Engineer",
+                role: "Junior Frontend Engineer",
                 company: "SMUMods",
                 link: "https://smumods.com/",
                 length: "Dec 2020 - Present",
-                description: ["Have not started work"]
+                description: [
+                    "Working with Vue and Nuxt for the frontend",
+                    "Used Tailwind CSS to style components",
+                    "Wrote queries and mutations for Graph QL database"]
             }
         ]
         this.state = this.jobs[0]
@@ -61,7 +64,7 @@ class MyWork extends Component {
                         </Col>
                         <Col md={{ span: 8 }}>
                             <h5>
-                                {this.state.role} @ <a href={this.state.link} >{this.state.company}</a>
+                                {this.state.role} @ <a href={this.state.link} target="_blank" rel="noopener">{this.state.company}</a>
                             </h5>
                             <p>
                                 {this.state.length}
