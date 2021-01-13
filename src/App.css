@@ -78,3 +78,11 @@ section{
 a:hover{
   text-decoration: none;
 }
+
+.px-10{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.grow { transition: all .3s ease-in-out; }
+.grow:hover { transform: scale(1.4); }
