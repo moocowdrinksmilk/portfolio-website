@@ -17,10 +17,9 @@ class App extends Component {
   render() {
     return (
       <main>
-        <Front />
-        <AboutMe />
-        <MyWork />
-        <Technology/>
+        <Front/>
+        <AboutMe/>
+        <MyWork/>
       </main>
     );
   }

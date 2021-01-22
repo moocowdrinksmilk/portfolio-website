@@ -19,7 +19,7 @@ class Icons extends React.Component {
             {this.props.children}
             {
                 this.state.isShown && 
-                <div className="position-absolute center-icon">
+                <div className="position-absolute center-icon text-sm-center">
                     {this.props.name}
                 </div>
             }

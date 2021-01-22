@@ -24,8 +24,8 @@ class MyWork extends Component {
                 link: "https://smumods.com/",
                 length: "Dec 2020 - Present",
                 description: [
-                    "Working with Vue and Nuxt for the frontend",
-                    "Used Tailwind CSS to style components",
+                    "Working with Vue and Nuxt for the frontend to create features",
+                    "Using Tailwind CSS to style components",
                     "Wrote queries and mutations for Graph QL database"]
             }
         ]

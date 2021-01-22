@@ -7,9 +7,6 @@ class AboutMe extends Component {
     constructor(props) {
         super(props)
         this.element = React.createRef()
-        this.state = {
-            description: "These are some places that I have been to recently"
-        }
     }
 
     changeDescription = (str) => {
@@ -48,19 +45,19 @@ class AboutMe extends Component {
                                 React
                             </li>
                             <li>
-                                Flutter
+                                Vue
                             </li>
                             <li>
-                                Typescript
+                                MySQL
                             </li>
                             <li>
-                                Node
+                                Java
                             </li>
                         </ul>
                         </Col>
-                        <Col md={{ span: 3 }}>
+                        {/* <Col md={{ span: 3 }}>
                             <img src='face.png' width='250rem' />
-                        </Col>
+                        </Col> */}
                     </Row>
                     
                 </Container>

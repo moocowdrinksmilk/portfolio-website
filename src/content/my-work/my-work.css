@@ -3,6 +3,7 @@ ol li {
   padding-bottom: 0.7rem;
   padding-top: 0.7rem;
   padding-left: 0.5rem;
+  padding-right: 0.5rem;
   text-align: left;
   cursor: pointer;
 }
@@ -40,6 +41,15 @@ h5 a {
   background-color: #476980;
 }
 
+/* .company-li::before{
+  height:80%;
+  content:' ';
+  position: absolute;
+  top: 0;
+  width: 1%;
+  left: 0;
+  background-color: gray;
+} */
 
 .active {
   border-bottom: 2px solid #b9e3ff;
